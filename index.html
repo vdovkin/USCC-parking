@@ -22,8 +22,117 @@
 </head>
 
 <body>
+<nav class="navbar  navbar-expand-md navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="static/img/logo.png">
+        <span class="ps-2">Типовий паркінг</span>
 
-    <h1>Параметри типового паркінгу</h1>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggle"
+      aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarToggle">
+    <div class="navbar-nav ms-auto">
+        <a class="nav-item nav-link" href="https://uscc.ua/">Перейти на сайт УЦСБ</a>
+    </div>
+</div>
+    </div>
+
+  </nav>
+
+  <header>
+    <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8 col-xl-6">
+              <div class="card mt-4 bg-light">
+                <img src="static/img/parking.jpg" alt="parking" class="card-img-top">
+                <h3 class="form-header card-title text-center p-2">Виберіть параметри паркінгу</h3>
+                <div class="card-body text-center">
+                <form id="mainForm">
+                    <div class="row justify-content-center mb-3">
+                        <div class="col-6 col-md-4 my-auto text-end">
+                            <label for="lenght" class="form-label main-label" >Довжина, м</label>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <select id='lenght' class="form-select" aria-label="Default select example">
+                                <option value="48">48</option>
+                                <option value="56">56</option>
+                                <option value="64">64</option>
+                              </select>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center mb-3">
+                        <div class="col-6 col-md-4 my-auto text-end">
+                                <label for="floors" class="form-label main-label" >Кількість поверхів</label>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <select id='floors' class="form-select" aria-label="Default select example">
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                              </select>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center mb-3">
+                        <div class="col-12 col-md-8">
+                                <div class="form-check form-switch main-switch  mx-auto d-flex">
+                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                    <label class="form-check-label main-label align-self-center ps-2" for="flexSwitchCheckDefault">Показати додаткові параметри</label>
+                                  </div>
+                        </div>
+                    </div>
+                  <div class="d-grid col-md-8 mx-auto">
+                      <button class="btn btn-main" type="button">Розрахувати</button>
+                    </div>
+                </form>
+                </div>
+              </div>
+
+          </div>
+
+          <div class="col-12 col-lg-8 col-xl-6">
+            <div class="card mt-4 bg-light">
+                <h3 class="form-header card-title text-center p-2">Обраховані показники</h3>
+                <div class="card-body text-center">
+                <form id="mainForm">
+                    <div class="row justify-content-center mb-3">
+                        <div class="col-6 col-md-4 my-auto text-end">
+                            <label for="lenght" class="form-label main-label" >Довжина, м</label>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <select id='lenght' class="form-select" aria-label="Default select example">
+                                <option value="48">48</option>
+                                <option value="56">56</option>
+                                <option value="64">64</option>
+                              </select>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center mb-3">
+                        <div class="col-6 col-md-4 my-auto text-end">
+                                <label for="floors" class="form-label main-label" >Кількість поверхів</label>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <select id='floors' class="form-select" aria-label="Default select example">
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                              </select>
+                        </div>
+                    </div>
+
+       
+                </form>
+                </div>
+              </div>
+
+          </div>
+
+        </div>
+      </div>
+  </header>
 
 
     <!-- bootstrap js -->
