@@ -60,10 +60,13 @@
                                             <label for="lenght" class="form-label main-label">Довжина, м</label>
                                         </div>
                                         <div class="col-6 col-md-4">
-                                            <select id='lenght' class="form-select" aria-label="Default select example" onchange="hideResults()">
+                                            <select id='lenght' class="form-select" aria-label="Default select example" onchange="mainCalculation()">
                                                 <option value="48">48</option>
                                                 <option value="56">56</option>
                                                 <option value="64">64</option>
+                                                <option value="72">72</option>
+                                                <option value="80">80</option>
+                                                <option value="88">88</option>
                                             </select>
                                         </div>
                                     </div>
@@ -72,10 +75,10 @@
                                             <label for="floors" class="form-label main-label">Кількість поверхів</label>
                                         </div>
                                         <div class="col-6 col-md-4">
-                                            <select id='floors' class="form-select" aria-label="Default select example" onchange="hideResults()">
+                                            <select id='floors' class="form-select" aria-label="Default select example" onchange="mainCalculation()">
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
-                                                <option value="4">4</option>
+                                                <option value="4" selected>4</option>
                                             </select>
                                         </div>
                                     </div>
