@@ -61,12 +61,12 @@ function showResults() {
 }
 
 // hide card with Results
-// function hideResults(){
-//     const resultsUI = document.getElementById('results');
-//     if (!resultsUI.classList.contains('d-none')){
-//         resultsUI.classList.add('d-none');
-//     }
-// }
+function hideResults(){
+    const resultsUI = document.getElementById('results');
+    if (!resultsUI.classList.contains('d-none')){
+        resultsUI.classList.add('d-none');
+    }
+}
 
 // show Rates
 function showRates() {
