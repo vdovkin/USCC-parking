@@ -60,7 +60,7 @@
                                             <label for="lenght" class="form-label main-label">Довжина, м</label>
                                         </div>
                                         <div class="col-6 col-md-4">
-                                            <select id='lenght' class="form-select" aria-label="Default select example">
+                                            <select id='lenght' class="form-select" aria-label="Default select example" onchange="hideResults()">
                                                 <option value="48">48</option>
                                                 <option value="56">56</option>
                                                 <option value="64">64</option>
@@ -72,7 +72,7 @@
                                             <label for="floors" class="form-label main-label">Кількість поверхів</label>
                                         </div>
                                         <div class="col-6 col-md-4">
-                                            <select id='floors' class="form-select" aria-label="Default select example">
+                                            <select id='floors' class="form-select" aria-label="Default select example" onchange="hideResults()">
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
                                                 <option value="4">4</option>
@@ -90,7 +90,7 @@
                         </div> -->
 
                             <div class="d-grid col-md-8 mx-auto bottom">
-                                <button class="btn btn-main" type="button">Розрахувати</button>
+                                <button class="btn btn-main" type="button" onclick="showResults()">Розрахувати</button>
                             </div>
 
                                     <!-- <div class="d-grid col-md-8 mx-auto">
@@ -102,7 +102,7 @@
     
                     </div>
 
-                    <div class="col-12 col-lg-6 mb-4" id='results'>
+                    <div class="col-12 col-lg-6 mb-4 d-none" id='results'>
                         <div class="card mt-4 bg-light h-100">
                             <h3 class="results-header card-title text-center p-2">Обраховані показники</h3>
                             <div class="card-body text-center">     

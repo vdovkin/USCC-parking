@@ -42,3 +42,19 @@ function loadRates() {
   
     xhr.send();
   }
+
+// Show card with Results
+function showResults(){
+    const resultsUI = document.getElementById('results');
+    if (resultsUI.classList.contains('d-none')){
+        resultsUI.classList.remove('d-none');
+    }
+}
+
+// hide card with Results
+function hideResults(){
+    const resultsUI = document.getElementById('results');
+    if (!resultsUI.classList.contains('d-none')){
+        resultsUI.classList.add('d-none');
+    }
+}
