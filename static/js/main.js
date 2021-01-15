@@ -11,16 +11,6 @@ loadValues((response) => {
   parkingValues = JSON.parse(response);
 });
 
-//convert units UI
-function convertUnitsUI(unit) {
-  if (unit === "м.куб.") {
-    unit = "м<sup>3</sup>";
-  } else if (unit === "м.кв.") {
-    unit = "м<sup>2</sup>";
-  }
-  return unit;
-}
-
 // Load Rates
 function loadRates(callback) {
   const xhr = new XMLHttpRequest();
@@ -68,33 +58,8 @@ function hideResults(){
     }
 }
 
-// show Rates
-function showRates() {
-  console.log(parkingRates);
-
-  let output = "";
-
-  parkingRates.forEach(function (rate) {
-    output += `
-          <tr>
-            <th scope='row' class="text-center">${rate.id}</th>
-            <td>${rate.name}</td>
-            <td class='text-center'>${convertUnitsUI(rate.units)}</td>
-            <td>${rate.value}</td>
-          </tr>
-        `;
-  });
-
-  document.getElementById("rates").innerHTML = output;
-}
-
 function numberWithSpaces(x) {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
-}
-
-//calculate paramets
-function test() {
-  console.log(parkingValues);
 }
 
 function parkingSpacesCalc(addedSections, removedFlors) {
