@@ -43,7 +43,7 @@ function loadValues(callback) {
 
 // Show card with Results
 function Results() {
-  // Show loader
+  hideResults();
   document.getElementById('loading').classList.remove('d-none');
   mainCalculation();
   setTimeout(showResults, 500);
