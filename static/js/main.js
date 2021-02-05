@@ -105,9 +105,20 @@ function costCalc(addedSections, removedFlors) {
 
     let deltaSection = (parametr.value2 - parametr.value1) / 5;
 
-    let newValue =
+    let newValue = 0;
+
+    if (parametr.id <= 4 ){
+      newValue =
+      (parametr.value1 + addedSections * deltaSection);
+    } else {
+      newValue =
       ((parametr.value1 + addedSections * deltaSection) / 4) *
       (4 - removedFlors);
+    }
+
+    // let newValue =
+    //   ((parametr.value1 + addedSections * deltaSection) / 4) *
+    //   (4 - removedFlors);
 
     totalCost += newValue * rate;
 
